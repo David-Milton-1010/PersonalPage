@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/4765c7aa11.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>David Milton Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <svg
+        class="laptop"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 640 512"
+      >
+        <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path
+          d="M128 32C92.7 32 64 60.7 64 96l0 256 64 0 0-256 384 0 0 256 64 0 0-256c0-35.3-28.7-64-64-64L128 32zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480l486.4 0c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2L19.2 384z"
+        />
+      </svg>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#projects" class="main-nav-link">Projects</a></li>
+          <li><a href="#about" class="main-nav-link">About Me</a></li>
+          <li><a href="#contact" class="main-nav-link">Contact</a></li>      
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <h1>David Milton</h1>
+      <p class="fullstack">Full Stack Software Developer</p>
+    </section>
+    <main>
+      
+      <div class="project-title">
+        <h2>Projects</h2>
+      </div>
+      <div id="projects">
+      
+        <div class="project-card">
+          <img src="assets/minimal-cactus.png" alt="Card with a cactus" class="cactus">
+          <div class="project-buttons">
+            <button class="btn btn-live">Demo</button>
+            <button class="btn btn-repo">Repo</button>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="assets/minimal-cactus.png" alt="Card with a cactus" class="cactus">
+          <div class="project-buttons">
+            <button class="btn btn-live">Demo</button>
+            <button class="btn btn-repo">Repo</button>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="assets/minimal-cactus.png" alt="Card with a cactus" class="cactus">
+          <div class="project-buttons">
+            <button class="btn btn-live">Demo</button>
+            <button class="btn btn-repo">Repo</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="about">
+        <h3>Coding, Cats, and Coffee!!!</h3>
+        <p>Those are just a few of my favorite things.</p>
+      </div>
+
+      <div id="contact">
+        <form action="#" method="post">
+          <input type="text" />
+          <input type="email" />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      Back to Top
+    </button>
+    <script src="index.js"></script>
+  </body>
+</html>

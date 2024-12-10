@@ -1,0 +1,181 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+/*COLOR SCHEME
+    dark gray - #222831
+    gray - #31363F
+    teal - #76ABAE
+    light gray - #EEEEEE;
+
+*/
+
+body {
+  font-family: "Press Start 2P", monospace;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1.5px;
+  height: 100svh;
+}
+h1 {
+  font-size: 6.4rem;
+  letter-spacing: -1.5px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.hero {
+  background-color: #222831;
+  color: #eeeeee;
+  text-align: center;
+  padding-bottom: 2.4rem;
+}
+
+.laptop {
+  height: 3.6rem;
+  fill: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222831;
+  padding: 1.6rem 4.8rem;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+.hero {
+  /* text-align: center; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1,
+p {
+  max-width: 90rem;
+  margin: 1rem 0;
+}
+
+main {
+  background-color: #31363f;
+  color: #eeeeee;
+}
+
+#about {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 3.2rem;
+  text-align: center;
+}
+
+h3 {
+  /* overflow: hidden; Ensures the content is not revealed until the animation */
+  /* border-right: 0.15em solid #76abae; The typwriter cursor */
+  /* white-space: nowrap; Keeps the content on a single line */
+  /* margin: 0 auto; Gives that scrolling effect as the typing happens */
+  /* letter-spacing: 0.15em; Adjust as needed */
+  /* animation: type 3.5s steps(36, end); */
+}
+
+/* @keyframes type {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+} */
+
+.project-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 12px;
+  grid-row-gap: 0px;
+  justify-items: center;
+  margin-bottom: 9.6rem;
+}
+
+@media (max-width: 1000px){
+ #projects{
+  grid-template-columns: 1fr;
+  grid-template-rows: (3, 1fr);
+  row-gap: 80px
+ }
+}
+
+.project-card {
+  /* height: 40rem; */
+  max-width: 30rem;
+  border-radius: 8px;
+}
+
+.cactus {
+  object-fit: cover;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1.4rem;
+}
+
+.btn {
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* This is for the back to the top button from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
